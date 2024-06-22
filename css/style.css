@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Work Sans";
+  background: rgb(16, 27, 11);
+  background: linear-gradient(180deg, rgba(16, 27, 11, 1) 0%, rgba(9, 11, 0, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f8f9fa;
+  height: 100svh;
+}
+.site {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 75px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 25px;
+  animation: fadeInUp 1.2s ease;
+  box-shadow: 25px 25px 0px -4px rgba(0, 0, 0, 0.4);
+}
+.greetings-board {
+  padding: 25px;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgb(37, 49, 31);
+  background-image: url("/imgs/backgroundcontainer.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.greetings-board h1 {
+  cursor: default;
+  user-select: none;
+  height: fit-content;
+  width: fit-content;
+  font-size: 6rem;
+}
+.password {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}.password input {
+  width: 100%;
+}.password i {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.register-board {
+  font-size: 1.5rem;
+  padding: 30px;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: #f8f9fa;
+  color: rgba(9, 11, 0, 1);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: auto;
+  max-width: 600px;
+  max-height: 650px;
+  scrollbar-color: rgb(118, 143, 107) rgba(226, 241, 219, 0.75);
+}
+.register-title {
+  text-align: center;
+  font-size: 2rem;
+  cursor: default;
+}.register-title h3 {
+  font-size: 3.5rem;
+}.register-title p {
+  padding-top: 15px;
+  font-size: 1.1rem;
+  color: rgba(16, 27, 11, 0.8);
+}
+
+.create-account {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}.create-account input {
+  margin-top: -10px;
+  border: none;
+  font-family: "Work Sans";
+  border-bottom: 1px solid #0d1b2a7a;
+  padding-bottom: 6px;
+  font-size: 1.1rem;
+  background-color: #f8f9fa;
+}.create-account input:focus {
+  outline: none;
+}.create-account label {
+  font-weight: bold;
+}.create-account p {
+  cursor: default;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(16, 27, 11, 1);
+}.create-account span {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}.create-account span:hover {
+  color: rgb(52, 87, 35);
+}.create-account button {
+  padding: 10px;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 8px;
+  font-family: "Work Sans";
+  margin-left: auto;
+  border: none;
+  font-size: 1.25rem;
+  background-color: rgb(33, 54, 23);
+  color: #f8f9fa;
+}.create-account button:hover {
+  background-color: rgb(52, 87, 35);
+}
+
+.password-generator {
+  display: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease;
+  gap: 20px;
+}.password-generator button {
+  margin: 0 auto;
+}.password-generator h4 {
+  color: rgb(52, 87, 35);
+  font-size: 1.3rem;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}.options input {
+  margin-top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 35px;
+  padding: 5px;
+}
+
+.password-result {
+  padding: 15px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  width: 90%;
+}.password-result h3 {
+  text-align: justify;
+  padding-block: 20px;
+  padding-inline: 15px;
+  color: rgb(52, 87, 35);
+  font-size: 2.5rem;
+  width: fit-content;
+  word-wrap: break-word;
+  word-break: break-all;
+}.password-result strong {
+  font-size: 1.25rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 25px;
+  position: fixed;
+  bottom: 0px;
+  padding-bottom: 20px;
+  padding-inline: 25px;
+  color: rgba(255, 255, 255, 0.63);
+  width: 100%;
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.5) 100%);
+  animation: fadeInY 0.8s ease;
+}footer a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.63);
+  transition: 0.3s;
+}footer a:hover {
+  transition: 0.3s;
+  transform: scale(1.5);
+  color: whitesmoke;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInY {
+  from {
+    transform: translateY(45px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1064px) {
+  body {
+    background-color: rgba(16, 27, 11, 1);
+    background-image: url("/imgs/backgroundcontainer.jpg");
+  }
+  .greetings-board {
+    display: none;
+  }
+  .site {
+    padding: 15px;
+    padding-top: 40px;
+  }
+  .container {
+    box-shadow: 10px 15px 0px -4px rgba(0, 0, 0, 0.5);
+  }
+  .register-board {
+    scrollbar-color: auto;
+    max-height: 700px;
+  }
+}
+
+@media (max-height: 840px) {
+  .site {
+    height: 90%;
+  }
+  footer {
+    padding-top: 10px;
+    position: relative;
+    font-size: 0.8rem;
+  }
+}
