@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   background-color: rgb(37, 49, 31);
-  background-image: url("/imgs/backgroundcontainer.jpg");
+  background-image: url("https://github.com/RecheEduardo/PasswordGenerator/blob/main/imgs/backgroundcontainer.jpg?raw=true");
   background-position: center;
   background-size: cover;
   border-top-left-radius: 20px;
