@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.icon-icons.com/icons2/588/PNG/512/1458264596_authorisation_lock_padlock_safe_password_privacy_security_icon-icons.com_55333.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <section class="site">
+      <div class="container">
+        <div class="greetings-board">
+          <h1>Bem vindo!</h1>
+          <h1>É bom</h1>
+          <h1>te ter aqui.</h1>
+        </div>
+        <div class="register-board">
+          <div class="register-title">
+            <h3>Crie a sua conta:</h3>
+            <p>
+              Registre-se para utilizar todas as funcionalidades do sistema.
+            </p>
+          </div>
+          <form class="create-account">
+            <label for="name"><i class="fa-solid fa-user"></i> Nome</label>
+            <input
+              type="text"
+              name="name"
+              id="username"
+              placeholder="Digite seu nome"
+              required
+            />
+            <label for="email"
+              ><i class="fa-solid fa-envelope"></i> E-Mail</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="e-mail"
+              placeholder="Digite seu E-Mail"
+              required
+            />
+            <label for="password"><i class="fa-solid fa-key"></i> Senha</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite a sua senha"
+              required
+            />
+            <p>
+              Quer ajuda para criar uma senha segura? <span>Clique Aqui.</span>
+            </p>
+            <div class="password-generator">
+              <p>Selecione as opções que você deseja:</p>
+              <div class="char-quant options">
+                <h4>Quantidade de caracteres:</h4>
+                <input
+                  type="number"
+                  name="charqtd"
+                  id="charQtd"
+                  min="1"
+                  max="64"
+                />
+              </div>
+              <div class="letter options">
+                <h4>Letras:</h4>
+                <input type="checkbox" name="lettersIn" id="lettersIn" />
+              </div>
+              <div class="numbers options">
+                <h4>Números:</h4>
+                <input type="checkbox" name="numbersIn" id="numbersIn" />
+              </div>
+              <div class="symbols options">
+                <h4>Símbolos:</h4>
+                <input type="checkbox" name="symbolsIn" id="symbolsIn" />
+              </div>
+              <button id="generate-password">Criar senha</button>
+              <div class="password-result">
+                <p><strong>Esta é a sua senha:</strong></p>
+                <h3></h3>
+                <button id="copy-clipboard">Copiar</button>
+              </div>
+            </div>
+            <label for="password-confirm"
+              ><i class="fa-solid fa-circle-check"></i> Confirmação de
+              Senha</label
+            >
+            <div class="password confirm">
+              <input
+                type="password"
+                name="password-confirm"
+                id="password-confirm"
+                placeholder="Confirme sua senha"
+                required
+              />
+            </div>
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="links">
+        <a
+          href="https://www.linkedin.com/in/eduardorechemartins/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/RecheEduardo/" target="_blank">
+          <i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <span>Desenvolvido por <strong>Eduardo Reche</strong></span>
+    </footer>
+  </body>
+</html>
