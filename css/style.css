@@ -241,7 +241,7 @@ footer {
 @media (max-width: 1064px) {
   body {
     background-color: rgba(16, 27, 11, 1);
-    background-image: url("/imgs/backgroundcontainer.jpg");
+    background-image: url("https://github.com/RecheEduardo/PasswordGenerator/blob/main/imgs/backgroundcontainer.jpg?raw=true");
   }
   .greetings-board {
     display: none;
