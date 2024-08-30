@@ -8,6 +8,14 @@
 <p align="justify"> O propósito do site é criar uma estrutura de registro de login e senha simples, porém com o diferencial da funcionalidade do criador de senhas, perfeito para usuários que querem garantir que sua conta está protegida por uma senha de alta segurança</p>
 <p align="justify"> Dentro das funcionalidades, vale destacar as funções de <strong>Limite de caracteres</strong> (restringindo a criação de senhas dentro de um intervalo de caracteres válidos) e a de <strong>Letras, Números e Símbolos</strong>, que possibilita o usuário customizar a criação de suas senhas com infinitas possibilidades.</p>
 
+# O que busquei aprimorar nesse projeto:
+
+* Manipulação de métodos do tipo String
+
+* Estruturação de funções que utilizam de parâmetros randomicos de geração de dados
+
+* Utilização de recursos do próprio navegador para acessibilidade do projeto, como a área de transferência onde sua senha gerada ficará armazenada
+
 ## Página Inicial
 
 <img src="https://github.com/RecheEduardo/PasswordGenerator/blob/main/imgs/SiteContent.png?raw=true" padding-top="2000px" align="center">
